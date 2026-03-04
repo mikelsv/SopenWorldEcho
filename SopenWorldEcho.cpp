@@ -10,13 +10,12 @@ struct Version {
 const char* PROJECTNAME = "SopenWorldEcho";
 Version PROJECTVER[] = {
     // new version to up
-    {"0.0.1.0", "04.03.2026 18:53"},
+    {"0.0.1.0", "04.03.2026 19:17"},
     {"0.0.0.1", "04.03.2026 18:00"}
 };
 
 int main_client(int argc, char* argv[]);
 int main_server(int argc, char* argv[]);
-
 
 int main(int argc, char* argv[])
 {
@@ -29,10 +28,10 @@ int main(int argc, char* argv[])
 
     std::string_view mode = argv[1];
 
-    if (mode == "-c" || mode == "client") {
+    if (mode == "-c" || mode == "--client") {
         return main_client(argc - 1, argv + 1);
     }
-    else if (mode == "-s" || mode == "server") {
+    else if (mode == "-s" || mode == "--server") {
         return main_server(argc - 1, argv + 1);
     }
     else {
