@@ -9,6 +9,7 @@
 #include <cstring>
 #include <cstdlib>
 #include <ctime>
+#include <climits>
 
 #define _WINSOCK_DEPRECATED_NO_WARNINGS
 
